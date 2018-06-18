@@ -19,7 +19,7 @@ class Member extends REST_Controller{
 		$password = $this->post('password');
 		
 		$check = $this->Member_mod->Login($phone, $password);
-		//print_r($check);die();
+	
 		if($check){
 			$messages = [
 				'Users' => $check,
