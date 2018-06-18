@@ -1,0 +1,75 @@
+[29-Aug-2016 16:04:51 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/lusnilum/public_html/tripp_api/application/models/User_model.php on line 25
+[05-Sep-2016 09:03:33 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 37
+[05-Sep-2016 09:11:10 UTC] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 12
+[05-Sep-2016 09:11:24 UTC] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 12
+[05-Sep-2016 09:16:10 UTC] PHP Parse error:  syntax error, unexpected '$Konten' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/controllers/api/Content_Control.php on line 32
+[14-Sep-2016 07:19:46 UTC] PHP Parse error:  syntax error, unexpected '$id_konten_input' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 66
+[14-Sep-2016 07:20:07 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 66
+[14-Sep-2016 07:21:19 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 66
+[14-Sep-2016 07:21:30 UTC] PHP Parse error:  syntax error, unexpected '$id_konten_input' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 66
+[14-Sep-2016 07:21:47 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 66
+[14-Sep-2016 07:22:09 UTC] PHP Parse error:  syntax error, unexpected '$id_konten_input' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 66
+[14-Sep-2016 07:24:21 UTC] PHP Parse error:  syntax error, unexpected 'id_konten' (T_STRING) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 65
+[14-Sep-2016 07:25:23 UTC] PHP Parse error:  syntax error, unexpected '$subquery' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 67
+[14-Sep-2016 07:25:39 UTC] PHP Parse error:  syntax error, unexpected '$subquery' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 67
+[14-Sep-2016 07:29:08 UTC] PHP Fatal error:  Call to a member function start_subquery() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 67
+[14-Sep-2016 07:30:01 UTC] PHP Fatal error:  Call to a member function start_subquery() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 67
+[14-Sep-2016 07:30:10 UTC] PHP Fatal error:  Call to a member function start_subquery() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 67
+[14-Sep-2016 07:30:48 UTC] PHP Fatal error:  Call to a member function start_subquery() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 67
+[14-Sep-2016 07:30:59 UTC] PHP Fatal error:  Call to a member function start_subquery() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 67
+[14-Sep-2016 07:36:41 UTC] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 65
+[14-Sep-2016 07:41:27 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 66
+[14-Sep-2016 07:41:35 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 66
+[14-Sep-2016 07:45:57 UTC] PHP Parse error:  syntax error, unexpected 'a' (T_STRING) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 69
+[14-Sep-2016 07:47:32 UTC] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 65
+[14-Sep-2016 07:49:37 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 68
+[14-Sep-2016 07:49:45 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 68
+[14-Sep-2016 07:50:07 UTC] PHP Parse error:  syntax error, unexpected '$suQuery' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 68
+[14-Sep-2016 07:50:17 UTC] PHP Parse error:  syntax error, unexpected '$subQuery' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 68
+[14-Sep-2016 07:57:38 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 68
+[14-Sep-2016 07:57:44 UTC] PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 68
+[14-Sep-2016 07:57:50 UTC] PHP Parse error:  syntax error, unexpected '$subQuery' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 68
+[15-Sep-2016 10:42:06 UTC] PHP Fatal error:  Call to undefined method Content_Control::input_get() in /home/lusnilum/public_html/tripp_api/application/controllers/api/Content_Control.php on line 53
+[16-Sep-2016 09:30:09 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/lusnilum/public_html/tripp_api/application/controllers/api/Content_Control.php on line 97
+[16-Sep-2016 11:23:49 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 89
+[16-Sep-2016 14:32:09 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 105
+[16-Sep-2016 14:33:42 UTC] PHP Fatal error:  Call to a member function result() on string in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 107
+[16-Sep-2016 14:46:28 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 82
+[16-Sep-2016 14:46:39 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 82
+[16-Sep-2016 14:46:58 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 82
+[16-Sep-2016 14:49:52 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 84
+[16-Sep-2016 14:51:21 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ')' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 110
+[16-Sep-2016 14:51:50 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ')' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 110
+[16-Sep-2016 14:54:12 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 88
+[16-Sep-2016 15:27:36 UTC] PHP Parse error:  syntax error, unexpected '$photoQuery' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 98
+[16-Sep-2016 15:27:52 UTC] PHP Parse error:  syntax error, unexpected '$photoQuery' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 98
+[17-Sep-2016 08:03:34 UTC] PHP Fatal error:  Call to a member function result() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 107
+[17-Sep-2016 09:56:21 UTC] PHP Fatal error:  Cannot use [] for reading in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 144
+[17-Sep-2016 09:56:37 UTC] PHP Fatal error:  Call to a member function num_rows() on array in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 95
+[17-Sep-2016 09:56:51 UTC] PHP Fatal error:  Call to a member function num_rows() on array in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 95
+[17-Sep-2016 10:04:38 UTC] PHP Parse error:  syntax error, unexpected '%' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 81
+[17-Sep-2016 10:07:00 UTC] PHP Parse error:  syntax error, unexpected 'd' (T_STRING) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 81
+[17-Sep-2016 10:14:17 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 81
+[17-Sep-2016 10:21:34 UTC] PHP Parse error:  syntax error, unexpected '%' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 76
+[17-Sep-2016 10:21:49 UTC] PHP Parse error:  syntax error, unexpected '%' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 76
+[17-Sep-2016 10:22:18 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 82
+[17-Sep-2016 14:37:43 UTC] PHP Parse error:  syntax error, unexpected 'pulic' (T_STRING), expecting function (T_FUNCTION) in /home/lusnilum/public_html/tripp_api/application/controllers/api/Content_Control.php on line 129
+[17-Sep-2016 14:37:51 UTC] PHP Parse error:  syntax error, unexpected '');' (T_ENCAPSED_AND_WHITESPACE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 222
+[17-Sep-2016 14:38:25 UTC] PHP Parse error:  syntax error, unexpected '');' (T_ENCAPSED_AND_WHITESPACE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 222
+[17-Sep-2016 14:38:41 UTC] PHP Parse error:  syntax error, unexpected '');' (T_ENCAPSED_AND_WHITESPACE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 222
+[17-Sep-2016 14:42:41 UTC] PHP Parse error:  syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 225
+[17-Sep-2016 14:49:38 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 225
+[17-Sep-2016 14:56:11 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 231
+[17-Sep-2016 14:56:32 UTC] PHP Fatal error:  Call to a member function result() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 226
+[17-Sep-2016 14:57:55 UTC] PHP Fatal error:  Call to a member function result() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 226
+[17-Sep-2016 15:36:19 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/lusnilum/public_html/tripp_api/application/controllers/api/Content_Control.php on line 151
+[11-Oct-2016 10:45:53 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/lusnilum/public_html/tripp_api/application/controllers/api/Content_Control.php on line 193
+[11-Oct-2016 10:46:16 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ']' in /home/lusnilum/public_html/tripp_api/application/controllers/api/Content_Control.php on line 197
+[21-Oct-2016 09:57:21 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/lusnilum/public_html/tripp_api/application/controllers/api/Plan_Control.php on line 39
+[25-Oct-2016 09:53:47 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/lusnilum/public_html/tripp_api/application/controllers/api/Plan_Control.php on line 150
+[03-Nov-2016 10:49:14 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 85
+[03-Nov-2016 11:05:35 UTC] PHP Parse error:  syntax error, unexpected 'status' (T_STRING) in /home/lusnilum/public_html/tripp_api/application/controllers/api/Content_Control.php on line 233
+[04-Nov-2016 13:03:47 UTC] PHP Fatal error:  Call to a member function result() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 172
+[04-Nov-2016 13:05:45 UTC] PHP Fatal error:  Call to a member function result() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 172
+[04-Nov-2016 13:07:03 UTC] PHP Fatal error:  Call to a member function result() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 172
+[04-Nov-2016 13:08:28 UTC] PHP Fatal error:  Call to a member function result() on null in /home/lusnilum/public_html/tripp_api/application/models/Content_model.php on line 172
