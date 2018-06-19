@@ -919,7 +919,7 @@ function _select_store_byfilter($filter = array(), $latCurrent, $longCurrent)
 			$this->db->group_start();
 			$this->db->select("MATCH (treatment.name_treatment) AGAINST ('".$filter['treatment']."' IN NATURAL LANGUAGE MODE) AS score");
 			$this->db->where("MATCH (treatment.name_treatment) AGAINST ('".$filter['treatment']."' IN NATURAL LANGUAGE MODE)");
-			$this->db->where('treatment.isdeleted', 0);
+			$this->db->where('treatment.isdeleted', 'false');
 			$this->db->group_end();
 		}
 	

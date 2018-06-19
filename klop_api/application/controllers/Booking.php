@@ -14,6 +14,25 @@ class Booking extends REST_Controller{
 		$this->load->model('Booking_mod');
     }
     
+	public function getCountBook_post(){
+       	$id_user = $this->post('id_user');
+       	$count = $this->Booking_mod->getCountBooking($id_user);
+       	
+       	if($count >= 3){
+			$message = [
+				'status' => 0,
+				'message' => 'Anda mencapai jumlah batas maksimal untuk melakukan reservasi. Mohon menyelesaikan reservasi sebelumnya',
+			];
+		}else{
+			$message = [
+				'status' => 1,
+				'message' => 'Lanjut reservasi',
+			];
+	
+		}			
+		$this->set_response($message, REST_Controller::HTTP_CREATED);
+    }
+    
     
     public function getAllBookedByUser_post(){
    	$id_user = $this->post('id_user');
