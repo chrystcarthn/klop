@@ -50,9 +50,7 @@
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
-        <div class="col-xs-8">
-           <a href="#" class="text-center" onclick="registerpage()" pull-left>Daftar sebagai admin baru</a>
-        </div>
+        
         <!-- /.col -->
         <div class="col-xs-4">
             
