@@ -344,7 +344,7 @@ class Main extends CI_Controller {
 	    $this->Mymodel->insert('category',$data);
 	   
 	   
-	   $data['kategori']=$this->Mymodel->select('category');
+	   $data['kategori']=$this->Mymodel->selectcat2('category');
 	   $data['content']='tampil/category';
 	   $data['loggedin']= $this->session->userdata('FULL_NAME');
 	   $this->load->view('tampil/main',$data);
