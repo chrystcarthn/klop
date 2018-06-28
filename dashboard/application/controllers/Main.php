@@ -102,6 +102,64 @@ class Main extends CI_Controller {
 	    
 	}
 	
+	public function update_profile()
+	{
+	   $id=$this->session->userdata('ID_USER');
+	   $data['dataupdate']=$this->db->query("SELECT * FROM users where id_user='$id' ");
+	   $data['content']='tampil/update_admin';
+	   $data['loggedin']= $this->session->userdata('FULL_NAME');
+	   $this->load->view('tampil/main', $data);
+	}
+	
+	public function update_admin()
+	{
+	    $idAdm=$this->input->post('id');
+	    $where= array('id_user'=>$idAdm);
+	    
+	    $data['full_name']=$this->input->post('nameadmin');
+	    $data['phone']=$this->input->post('phone');
+	    $data['email']=$this->input->post('email');
+	    $data['password']=$this->input->post('pasword');
+	    
+	    $data['updated']= date('Y-m-d H:i:s');
+	    $data['updated_by']= $this->session->userdata('ID_USER');
+	    
+	    $this->Mymodel->update('users',$data, $where);
+	    $sess = array(
+    	                'ID_USER' => $datauser->ID_USER,
+    	                'FULL_NAME' => $datauser->FULL_NAME,
+    	                'ID_ROLE' => $datauser->ID_ROLE,
+    	                );
+    	$this->session->set_userdata($sess);
+		
+		
+		 $data['content']='tampil/report';
+	        
+	       $data['juser'] = $this->Mymodel->getcountuser('users');
+	       $data['jklien'] = $this->Mymodel->getcountklien('users');
+	       $data['jaktif'] = $this->Mymodel->getcountaktif('store');
+	       $data['jnonaktif'] = $this->Mymodel->getcountnonaktif('store');
+	        
+	       $where= array('id_role'=>'2');
+    	   $data['users']=$this->Mymodel->selectwhere('users',$where);
+    	   
+    	   $data['klien'] = $this->Mymodel->select2('users');
+    	   
+    	   //$where= array('status_store'=>'verified',
+    	   //                 'is_deleted'=>'false');
+	      // $data['outlet']=$this->Mymodel->selectwhere('store',$where);
+           $data['outlet']=$this->Mymodel->selectaktif('store');
+
+            $where= array('status_store'=>'verified',
+    	                    'is_deleted'=>'true');
+	       $data['outletnon']=$this->Mymodel->selectwhere('store',$where);
+
+            
+
+    	   $data['loggedin']= $this->session->userdata('FULL_NAME');
+    	   $this->load->view('tampil/main', $data); 
+	}
+	
 	public function allstore()
 	{
 	   $data['outlet']=$this->Mymodel->selectallstore('store');

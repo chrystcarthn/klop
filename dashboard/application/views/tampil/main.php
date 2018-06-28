@@ -63,28 +63,12 @@
                 
               <span class="hidden-xs"><?php echo "Halo, Anda masuk sebagai admin $loggedin"; ?></span> 
             </a>
-            <ul class="dropdown-menu">
-              <!-- User image -->
-              
-              <!-- Menu Body -->
-              <li class="user-body">
-                <div class="row">
-                  <div class="col-xs-8 text-center">
-                    <a href="#">Ubah Profil</a>
-                  </div>
-                  <div class="col-xs-8 text-center">
-                    <a href="<?php echo base_url('index.php/Logout') ?>">Keluar</a>
-                  </div>
-                  
-                </div>
-                <!-- /.row -->
-              </li>
-              <!-- Menu Footer-->
-              
-              </li>
-            </ul>
+            
           </li>
           <!-- Control Sidebar Toggle Button -->
+		   <li>
+            <a href="<?php echo base_url('index.php/Main/update_profile') ?>"><i class="fa fa-edit"></i></a>
+          </li>
           <li>
             <a href="<?php echo base_url('index.php/Logout') ?>"><i class="fa fa-power-off"></i></a>
           </li>
