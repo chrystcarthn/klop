@@ -96,7 +96,7 @@ class Main extends CI_Controller {
 	
 	public function category()
 	{
-	   $data['kategori']=$this->Mymodel->select('category');
+	   $data['kategori']=$this->Mymodel->selectcat('category');
 	   $data['content']='tampil/category';
 	    $data['loggedin']= $this->session->userdata('FULL_NAME');
 	   $this->load->view('tampil/main',$data);
