@@ -85,20 +85,20 @@
                 <?php foreach ($dataupdate->result() as $key) { ?>
                   <label for="text">Nama</label>
                      <input type="hidden" class="form-control" id="id" name="id" placeholder="Id" value="<?php echo $key->ID_USER; ?>">
-                    <input type="text" required class="form-control" id="nameadmin" name="nameadmin" placeholder="Ketik nama kategori..." value="<?php echo $key->FULL_NAME; ?>">
+                    <input type="text" required class="form-control" id="nameadmin" name="nameadmin" placeholder="Ketik nama..." value="<?php echo $key->FULL_NAME; ?>">
                 </div>
                <div class="form-group">
                   <label for="text">Email</label>
-				<input type="email" required class="form-control" id="nameadmin" name="nameadmin" placeholder="Ketik nama kategori..." value="<?php echo $key->EMAIL; ?>">
+				<input type="email" required class="form-control" id="email" name="email" placeholder="Ketik email..." value="<?php echo $key->EMAIL; ?>">
   
 			   </div>
 				<div class="form-group">
 				<label for="text">Nomor Telepon</label>
-                  <input type="number" required class="form-control" id="nameadmin" name="nameadmin" placeholder="Ketik nama kategori..." value="<?php echo $key->PHONE; ?>">
+                  <input type="number" required class="form-control" id="phone" name="phone" placeholder="Ketik nomor telepon..." value="<?php echo $key->PHONE; ?>">
 				</div>
 				<div class="form-group">
 				<label for="text">Kata Sandi</label>
-                  <input type="password" required class="form-control" id="nameadmin" name="nameadmin" placeholder="Ketik nama kategori..." value="<?php echo $key->PASSWORD; ?>">
+                  <input type="password" required class="form-control" id="password" name="password" placeholder="Ketik kata sandi..." value="<?php echo $key->PASSWORD; ?>">
 				</div>
                 
                  <?php } ?>
