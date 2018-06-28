@@ -133,9 +133,9 @@ class Main extends CI_Controller {
 		
 
 	    $sess = array(
-			'ID_USER' => $user[0]->ID_USER,
-			'FULL_NAME' => $user[0]->FULL_NAME,
-			'ID_ROLE' => $user[0]->ID_ROLE,
+			'ID_USER' => $user->result()->ID_USER,
+			'FULL_NAME' => $user->result()->FULL_NAME,
+			'ID_ROLE' => $user->result()->ID_ROLE,
 		);
     	$this->session->set_userdata($sess);
 		
