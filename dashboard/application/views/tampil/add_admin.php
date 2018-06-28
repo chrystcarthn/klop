@@ -102,6 +102,13 @@
                   <!--</div>-->
                   <input type="text" required class="form-control" id="phone" name="phone" placeholder="Ketik nomor telepon...">
                 </div>
+				<div class="form-group">
+                  <label for="password">Kata Sandi</label>
+
+                  <!--<div id="myDIV" style="display:none;"><span calss="pull-right" style="color:#C20A0A;text-align:right; " >   *wajib diisi</span>-->
+                  <!--</div>-->
+                  <input type="email" required class="form-control" id="email" name="email" placeholder="Ketik alamat email...">
+                </div>
                <div class="form-group">
                   <label>Status</label>
                   <select class="form-control" id="status" name="status">
