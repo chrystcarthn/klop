@@ -84,33 +84,35 @@
                 <div class="form-group">
                 <?php foreach ($dataupdate->result() as $key) { ?>
                   <label for="text">Nama</label>
-                     <input type="hidden" class="form-control" id="id" name="id" placeholder="Id" value="<?php echo $key->ID_CATEGORY_DB; ?>">
-                    <input type="text" required class="form-control" id="nameadmin" name="nameadmin" placeholder="Ketik nama kategori..." value="<?php echo $key->NAME_CATEGORY; ?>">
+                     <input type="hidden" class="form-control" id="id" name="id" placeholder="Id" value="<?php echo $key->ID_USER; ?>">
+                    <input type="text" required class="form-control" id="nameadmin" name="nameadmin" placeholder="Ketik nama kategori..." value="<?php echo $key->FULL_NAME; ?>">
                     
                   
                 </div>
-               <div class="form-group">
+                <div class="form-group">
+                <?php foreach ($dataupdate->result() as $key) { ?>
                   <label for="text">Email</label>
-
-                  <!--<div id="myDIV" style="display:none;"><span calss="pull-right" style="color:#C20A0A;text-align:right; " >   *wajib diisi</span>-->
-                  <!--</div>-->
-                  <input type="email" required class="form-control" id="email" name="email" placeholder="Ketik alamat email...">
+                    
+                    <input type="email" required class="form-control" id="email" name="email" placeholder="Ketik nama kategori..." value="<?php echo $key->EMAIL; ?>">
+                    
+                  
                 </div>
 				<div class="form-group">
+                <?php foreach ($dataupdate->result() as $key) { ?>
                   <label for="text">Nomor Telepon</label>
-
-                  <!--<div id="myDIV" style="display:none;"><span calss="pull-right" style="color:#C20A0A;text-align:right; " >   *wajib diisi</span>-->
-                  <!--</div>-->
-                  <input type="number" required class="form-control" id="phone" name="phone" placeholder="Ketik nomor telepon...">
+                     
+                    <input type="number" required class="form-control" id="phone" name="phone" placeholder="Ketik nama kategori..." value="<?php echo $key->PHONE; ?>">
+                    
+                  
                 </div>
 				<div class="form-group">
-                  <label for="text">Kata Sandi</label>
-
-                  <!--<div id="myDIV" style="display:none;"><span calss="pull-right" style="color:#C20A0A;text-align:right; " >   *wajib diisi</span>-->
-                  <!--</div>-->
-                  <input type="password" required class="form-control" id="email" name="email" placeholder="Ketik kata sandi...">
+                <?php foreach ($dataupdate->result() as $key) { ?>
+                  <label for="text">Kata sandi</label>
+                     
+                    <input type="password" required class="form-control" id="password" name="password" placeholder="Ketik nama kategori..." value="<?php echo $key->PASSWORD; ?>">
+                    
+                  
                 </div>
-                
                  <?php } ?>
               </div>
               <!-- /.box-body -->
