@@ -156,7 +156,7 @@
                         
                     </td>
                     <td>
-                        <a href="#" class="btn btn-primary btn-xs" onclick="updateadmin('<?php echo $i->ID_USERS; ?>')">Ubah</a>
+                        <a href="#" class="btn btn-primary btn-xs" onclick="updateadmin('<?php echo $i->ID_USER; ?>')">Ubah</a>
                        
                     </td>
                     
