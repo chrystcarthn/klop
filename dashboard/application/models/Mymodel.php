@@ -210,8 +210,8 @@ class Mymodel extends CI_Model {
 	public function selectadmin($table)
 	{
 	   
-	    $this->db->select('users.FULL_NAME, users.STATUS, users.PHONE, users.EMAIL, users.CREATED, (select FULL_NAME from users where ID_USER = users.CREATED_BY) "NamaAC", users.UPDATED,(select FULL_NAME from users where ID_USER = users.UPDATED_BY) "NamaAU"');
-		$this->db->join('users','users.CREATED_BY = users.ID_USER');
+	    $this->db->select('userss.FULL_NAME, userss.STATUS, userss.PHONE, userss.EMAIL, userss.CREATED, (select FULL_NAME from users where ID_USER = userss.CREATED_BY) "NamaAC", userss.UPDATED,(select FULL_NAME from users where ID_USER = userss.UPDATED_BY) "NamaAU"');
+		$this->db->join('users','userss.CREATED_BY = users.ID_USER');
 		return $this->db->get($table);
 	}
 	
