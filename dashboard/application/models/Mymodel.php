@@ -216,7 +216,7 @@ class Mymodel extends CI_Model {
 	
 	public function selectcat2($table)
 	{
-	    $this->db->select('category.ID_CATEGORY_DB, category.NAME_CATEGORY, category.PUBLISHED, category.CREATED, (select FULL_NAME from users where ID_USER = category.CREATED_BY) "NamaAC" , category.UPDATED, (select FULL_NAME from users where ID_USER = category.UPDATED_BY) "NamaAU"');
+	    $this->db->select('category.ID_CATEGORY_DB, category.NAME_CATEGORY, category.CREATED, (select FULL_NAME from users where ID_USER = category.CREATED_BY) "NamaAC" , category.UPDATED, (select FULL_NAME from users where ID_USER = category.UPDATED_BY) "NamaAU",  category.PUBLISHED');
 	    $this->db->join('users','category.CREATED_BY = users.ID_USER');
 		return $this->db->get($table);
 	}
