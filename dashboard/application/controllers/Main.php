@@ -129,9 +129,9 @@ class Main extends CI_Controller {
 		$getuser = $this->db->get_where('users', array('EMAIL' => $this->input->post('email'), 'PASSWORD' => $this->input->post('pasword')));
 		$datauser = $getuser->row();
 	    $sess = array(
-			'ID_USER' => $datauser->ID_USER,
-			'FULL_NAME' => $datauser->FULL_NAME,
-			'ID_ROLE' => $datauser->ID_ROLE,
+			'ID_USER' => $getuser->row()->ID_USER,
+			'FULL_NAME' => $getuser->row()->FULL_NAME,
+			'ID_ROLE' => $getuser->row()->ID_ROLE,
 		);
     	$this->session->set_userdata($sess);
 		
