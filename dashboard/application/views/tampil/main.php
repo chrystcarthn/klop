@@ -69,10 +69,10 @@
               <!-- Menu Body -->
               <li class="user-body">
                 <div class="row">
-                  <div class="col-xs-4 text-center">
+                  <div class="col-xs-8 text-center">
                     <a href="#">Ubah Profil</a>
                   </div>
-                  <div class="col-xs-4 text-center">
+                  <div class="col-xs-8 text-center">
                     <a href="<?php echo base_url('index.php/Logout') ?>">Keluar</a>
                   </div>
                   
