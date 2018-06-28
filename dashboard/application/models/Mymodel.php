@@ -131,8 +131,12 @@ class Mymodel extends CI_Model {
     	                );
     	            $this->session->set_userdata($sess);
     	            header('location:'.base_url().'index.php/Main');
-    	        } else
-    	            header('location:'.base_url());
+    	        } else{
+    	           // header('location:'.base_url());
+					echo "<script>alert('Email atau kata sandi salah, silahkan coba lagi');";
+					echo "windows.location.href = '" .base_url(). "';";
+					echo "</script>";
+				}
     	    } else {
     	        echo "<script>alert('Email atau kata sandi salah, silahkan coba lagi');";
     	        echo "windows.location.href = '" .base_url(). "';";
