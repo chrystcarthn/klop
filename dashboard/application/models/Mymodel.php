@@ -211,7 +211,7 @@ class Mymodel extends CI_Model {
 	{
 	   
 	    $this->db->select('FULL_NAME, STATUS, PHONE, EMAIL, CREATED, (select FULL_NAME from users where ID_USER = CREATED_BY) "NamaAC", UPDATED,(select FULL_NAME from users where ID_USER = UPDATED_BY) "NamaAU"');
-		 $this->db->where('ID_ROLE', '1');
+		$this->db->where('ID_ROLE', 1);
 		return $this->db->get($table);
 	}
 	
