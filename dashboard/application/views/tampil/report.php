@@ -44,6 +44,11 @@
             <i class="fa fa-th"></i> <span>Pengelolaan Admin</span>
           </a>
         </li>
+		 <li>
+          <a href="<?php echo base_url('index.php/Main/admin') ?>">
+            <i class="fa fa-th"></i> <span>Pengelolaan Admin</span>
+          </a>
+        </li>
         
       </ul>
     </section>
