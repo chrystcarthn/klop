@@ -134,7 +134,7 @@
                         }
                     
                     ?></td>
-                    <td><?php echo $i->CREATED_BY; ?></td>
+                    <td><?php echo $i->NamaAC; ?></td>
                 
                     <td>
                         <?php if($i->UPDATED == "0000-00-00 00:00:00"){
@@ -147,14 +147,7 @@
                           ?>
                         
                     </td>
-                    <td>
-                        <?php if($i->UPDATED_BY == "0"){
-                            echo "-";
-                          } 
-                           else echo $i->UPDATED_BY;
-                          ?>
-                        
-                    </td>
+                    <td><?php echo $i->NamaAU; ?></td>
                     <td>
                         <a href="#" class="btn btn-primary btn-xs" onclick="updatecategory('<?php echo $i->ID_CATEGORY_DB; ?>')">Ubah</a>
                        
