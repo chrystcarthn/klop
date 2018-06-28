@@ -151,7 +151,7 @@
                     
 					 <td>
                         <a href="#" type="submit" method="post" class="btn btn-success btn-xs" id="id" onclick="active('<?php echo $i->ID_USER; ?>')">Aktifkan</a>
-                        <a href="#" type="submit" method="post" class="btn btn-danger btn-xs" id="id" onclick="nonactive('<?php echo $i->ID_STORE; ?>')">Deaktif</a>
+                        <a href="#" type="submit" method="post" class="btn btn-danger btn-xs" id="id" onclick="nonactive('<?php echo $i->ID_USER; ?>')">Deaktif</a>
                     </td>
                     
                    
