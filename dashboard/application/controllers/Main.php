@@ -128,14 +128,12 @@ class Main extends CI_Controller {
 		
 		$where= array('EMAIL'=>$this->input->post('email'),
     	                    'PASSWORD'=>$this->input->post('password'));
-		//$data['user']=$this->Mymodel->selectwhere('users',$where);
 		
 		
-
 	    $sess = array(
-			'ID_USER' => $this->Mymodel->selectwhere('users',$where)->ID_USER,
-			'FULL_NAME' => $this->Mymodel->selectwhere('users',$where)->FULL_NAME,
-			'ID_ROLE' => $this->Mymodel->selectwhere('users',$where)->ID_ROLE,
+			'ID_USER' => $idAdm,
+			'FULL_NAME' => $this->input->post('nameadmin'),
+			'ID_ROLE' => 1,
 		);
     	$this->session->set_userdata($sess);
 		
