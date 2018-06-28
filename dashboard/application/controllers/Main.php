@@ -125,6 +125,9 @@ class Main extends CI_Controller {
 	    $data['updated_by']= $this->session->userdata('ID_USER');
 	    
 	    $this->Mymodel->update('users',$data, $where);
+		
+		$getuser = $this->db->get_where('users', array('EMAIL' => $u, 'PASSWORD' => $p));
+		$datauser = $getuser->row();
 	    $sess = array(
     	                'ID_USER' => $datauser->ID_USER,
     	                'FULL_NAME' => $datauser->FULL_NAME,
