@@ -206,5 +206,12 @@ class Mymodel extends CI_Model {
 	    $this->db->where('store.STATUS_STORE', 'unverified');
 		return $this->db->get($table);
 	}
+	
+	public function selectadmin($table)
+	{
+	    $this->db->select('*');
+	    $this->db->where('ID_ROLE', '1');
+		return $this->db->get($table);
+	}
 
 }

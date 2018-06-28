@@ -49,6 +49,14 @@ class Main extends CI_Controller {
 	  
 	}
 	
+	public function admin()
+	{
+	   $data['admin']=$this->Mymodel->select('users');
+	   $data['content']='tampil/admin';
+	   $data['loggedin']= $this->session->userdata('FULL_NAME');
+	   $this->load->view('tampil/main',$data);
+	}
+	
 	public function allstore()
 	{
 	   $data['outlet']=$this->Mymodel->selectallstore('store');
