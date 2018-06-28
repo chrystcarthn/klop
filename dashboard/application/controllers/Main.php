@@ -57,6 +57,51 @@ class Main extends CI_Controller {
 	   $this->load->view('tampil/main',$data);
 	}
 	
+	public function nonactiveAdm()
+	{
+	    $id=$this->uri->segment(3);
+	    if($id != $this->session->userdata('ID_USER'))
+		{
+			$where= array('id_user'=>$id);
+			
+			$data['status']= "nonactive";
+			$data['updated']= date('Y-m-d H:i:s');
+			$data['updated_by']= $this->session->userdata('ID_USER');
+			
+			$this->Mymodel->update('users',$data, $where);
+			
+		   $data['admin']=$this->Mymodel->selectadmin('users');
+		   $data['content']='tampil/admin';
+		   $data['loggedin']= $this->session->userdata('FULL_NAME');
+		   $this->load->view('tampil/main',$data);
+		} else {
+			echo "<script>alert('Tidak bisa mendeaktivasi diri sendiri');";
+			echo "windows.location.href = '" .base_url().'index.php/Main/admin' "';";
+    	    echo "</script>";
+		}
+	}
+	
+	public function activeAdm()
+	{
+	    $id=$this->uri->segment(3);
+	    
+		
+			$where= array('id_user'=>$id);
+		
+			$data['status']= "active";
+			$data['updated']= date('Y-m-d H:i:s');
+			$data['updated_by']= $this->session->userdata('ID_USER');
+			
+			$this->Mymodel->update('users',$data, $where);
+			
+		   $data['admin']=$this->Mymodel->selectadmin('users');
+		   $data['content']='tampil/admin';
+		   $data['loggedin']= $this->session->userdata('FULL_NAME');
+		   $this->load->view('tampil/main',$data);
+		
+	    
+	}
+	
 	public function allstore()
 	{
 	   $data['outlet']=$this->Mymodel->selectallstore('store');

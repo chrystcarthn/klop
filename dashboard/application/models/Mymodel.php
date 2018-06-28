@@ -212,7 +212,7 @@ class Mymodel extends CI_Model {
 	   
 	    $this->db->select('ID_USER, FULL_NAME, STATUS, PHONE, EMAIL, CREATED, (select FULL_NAME from users where ID_USER = CREATED_BY) "NamaAC", UPDATED,(select FULL_NAME from users where ID_USER = UPDATED_BY) "NamaAU"');
 		$this->db->where('ID_ROLE', 1);
-		return $this->db->get($table);
+		return $this->db->get_where($table);
 	}
 	
 	public function selectcat2($table)

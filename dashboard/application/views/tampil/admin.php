@@ -148,9 +148,10 @@
                         
                     </td>
                     <td><?php echo $i->NamaAU; ?></td>
-                    <td>
-                        <a href="#" class="btn btn-primary btn-xs" onclick="updateadmin('<?php echo $i->ID_USER; ?>')">Ubah</a>
-                       
+                    
+					 <td>
+                        <a href="#" type="submit" method="post" class="btn btn-success btn-xs" id="id" onclick="active('<?php echo $i->ID_USER; ?>')">Aktifkan</a>
+                        <a href="#" type="submit" method="post" class="btn btn-danger btn-xs" id="id" onclick="nonactive('<?php echo $i->ID_STORE; ?>')">Deaktif</a>
                     </td>
                     
                    
@@ -162,13 +163,14 @@
           </table>
           
           <script type="text/javascript">
+           
+            function active(param){
+                document.location='<?php echo base_url('index.php/Main/activeAdm/') ?>'+param;
+            }
+            function nonactive(param){
+                 document.location='<?php echo base_url('index.php/Main/nonactiveAdm/') ?>'+param;
+            }
             
-            function updateadmin(param){
-                document.location='<?php echo base_url(); ?>index.php/Main/update_adm/'+param;
-            }
-            function addadmin(){
-                document.location='<?php echo base_url(); ?>index.php/Main/add_new_adm/';
-            }
             </script>
           
         </div>
