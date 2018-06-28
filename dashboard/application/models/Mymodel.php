@@ -209,8 +209,9 @@ class Mymodel extends CI_Model {
 	
 	public function selectadmin($table)
 	{
-	    $this->db->select('*');
-	    $this->db->where('ID_ROLE', '1');
+	   
+	    $this->db->select('users.FULL_NAME, users.STATUS, users.PHONE, users.EMAIL, users.CREATED, (select FULL_NAME from users where ID_USER = users.CREATED_BY) "NamaAC", users.UPDATED,(select FULL_NAME from users where ID_USER = users.UPDATED_BY) "NamaAU"');
+		$this->db->join('users','users.CREATED_BY = users.ID_USER');
 		return $this->db->get($table);
 	}
 	
