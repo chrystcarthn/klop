@@ -163,7 +163,9 @@
           </table>
           
           <script type="text/javascript">
-           
+           function addadmin(){
+                document.location='<?php echo base_url(); ?>index.php/Main/add_new_adm/';
+            }
             function active(param){
                 document.location='<?php echo base_url('index.php/Main/activeAdm/') ?>'+param;
             }
