@@ -56,6 +56,7 @@ class Member extends REST_Controller{
 				'phone' => $phone,
 				'password' => $password,
 				'id_role' => 2,
+				'status' => 'active',
 				'created' => date('Y-m-d H:i:s'),
 			);
 			
