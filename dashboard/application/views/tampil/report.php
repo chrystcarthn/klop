@@ -107,7 +107,7 @@
             <span class="info-box-icon bg-purple"><i class="fa fa-group"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Klien</span>
+              <span class="info-box-text">Pemilik Outlet</span>
               <h3><b>
                <?php echo $jklien->row()->jklien; ?>
                 </b>
@@ -158,7 +158,7 @@
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#user" data-toggle="tab">Pengguna</a></li>
-              <li><a href="#klien" data-toggle="tab">Klien</a></li>
+              <li><a href="#klien" data-toggle="tab">Pemilik Outlet</a></li>
               <li><a href="#aktif" data-toggle="tab">Outlet Aktif</a></li>
                <li><a href="#nonaktif" data-toggle="tab">Outlet Nonaktif</a></li>
             </ul>
