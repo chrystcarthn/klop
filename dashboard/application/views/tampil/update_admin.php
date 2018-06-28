@@ -86,33 +86,21 @@
                   <label for="text">Nama</label>
                      <input type="hidden" class="form-control" id="id" name="id" placeholder="Id" value="<?php echo $key->ID_USER; ?>">
                     <input type="text" required class="form-control" id="nameadmin" name="nameadmin" placeholder="Ketik nama kategori..." value="<?php echo $key->FULL_NAME; ?>">
-                    
-                  
                 </div>
-                <div class="form-group">
-                <?php foreach ($dataupdate->result() as $key) { ?>
+               <div class="form-group">
                   <label for="text">Email</label>
-                    
-                    <input type="email" required class="form-control" id="email" name="email" placeholder="Ketik nama kategori..." value="<?php echo $key->EMAIL; ?>">
-                    
-                  
-                </div>
+				<input type="text" required class="form-control" id="nameadmin" name="nameadmin" placeholder="Ketik nama kategori..." value="<?php echo $key->EMAIL; ?>">
+  
+			   </div>
 				<div class="form-group">
-                <?php foreach ($dataupdate->result() as $key) { ?>
-                  <label for="text">Nomor Telepon</label>
-                     
-                    <input type="number" required class="form-control" id="phone" name="phone" placeholder="Ketik nama kategori..." value="<?php echo $key->PHONE; ?>">
-                    
-                  
-                </div>
+				<label for="text">Nomor Telepon</label>
+                  <input type="text" required class="form-control" id="nameadmin" name="nameadmin" placeholder="Ketik nama kategori..." value="<?php echo $key->PHONE; ?>">
+				</div>
 				<div class="form-group">
-                <?php foreach ($dataupdate->result() as $key) { ?>
-                  <label for="text">Kata sandi</label>
-                     
-                    <input type="password" required class="form-control" id="password" name="password" placeholder="Ketik nama kategori..." value="<?php echo $key->PASSWORD; ?>">
-                    
-                  
-                </div>
+				<label for="text">Kata Sandi</label>
+                  <input type="text" required class="form-control" id="nameadmin" name="nameadmin" placeholder="Ketik nama kategori..." value="<?php echo $key->PASSWORD; ?>">
+				</div>
+                
                  <?php } ?>
               </div>
               <!-- /.box-body -->
