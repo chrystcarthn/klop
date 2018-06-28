@@ -98,7 +98,7 @@ class Main extends CI_Controller {
 	{
 	   $data['kategori']=$this->Mymodel->selectcat2('category');
 	   $data['content']='tampil/category';
-	    $data['loggedin']= $this->session->userdata('FULL_NAME');
+	   $data['loggedin']= $this->session->userdata('FULL_NAME');
 	   $this->load->view('tampil/main',$data);
 	}
 	
@@ -119,7 +119,7 @@ class Main extends CI_Controller {
 	   $data['dataupdate']=$this->db->query("SELECT * FROM category where id_category_db='$id' ");
 	   $data['side']='tampil/side';
 	   $data['content']='tampil/update_category';
-	    $data['loggedin']= $this->session->userdata('FULL_NAME');
+	   $data['loggedin']= $this->session->userdata('FULL_NAME');
 	   $this->load->view('tampil/main', $data);
 	}
 	
@@ -140,7 +140,7 @@ class Main extends CI_Controller {
 	    
 	    $this->Mymodel->update('category',$data, $where);
 	    
-	   $data['kategori']=$this->Mymodel->select('category');
+	   $data['kategori']=$this->Mymodel->selectcat2('category');
 	   $data['content']='tampil/category';
 	   $data['loggedin']= $this->session->userdata('FULL_NAME');
 	   $this->load->view('tampil/main',$data);
