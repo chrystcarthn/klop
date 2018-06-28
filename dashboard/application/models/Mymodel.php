@@ -123,7 +123,7 @@ class Mymodel extends CI_Model {
     	    $cek_login = $this->db->get_where('users', array('EMAIL' => $u, 'PASSWORD' => $p));
     	    if($cek_login->num_rows() > 0){
     	        $datauser = $cek_login->row();
-    	        if($u == $datauser->EMAIL && $p == $datauser->PASSWORD && $datauser->ID_ROLE == '1'){
+    	        if($u == $datauser->EMAIL && $p == $datauser->PASSWORD && $datauser->ID_ROLE == '1' && $datauser->STATUS == 'active'){
     	            $sess = array(
     	                'ID_USER' => $datauser->ID_USER,
     	                'FULL_NAME' => $datauser->FULL_NAME,

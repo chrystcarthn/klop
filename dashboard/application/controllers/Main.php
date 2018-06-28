@@ -67,7 +67,6 @@ class Main extends CI_Controller {
 			$data['status']= "nonactive";
 			$data['updated']= date('Y-m-d H:i:s');
 			$data['updated_by']= $this->session->userdata('ID_USER');
-			
 			$this->Mymodel->update('users',$data, $where);
 			
 		   $data['admin']=$this->Mymodel->selectadmin('users');
