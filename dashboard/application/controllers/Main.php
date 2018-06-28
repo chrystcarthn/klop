@@ -150,7 +150,7 @@ class Main extends CI_Controller {
 
 	public function facility()
 	{
-	   $data['fasilitas']=$this->Mymodel->select('facility');
+	   $data['fasilitas']=$this->Mymodel->selectfac2('facility');
 	   $data['content']='tampil/facility';
 	   $data['loggedin']= $this->session->userdata('FULL_NAME');
 	   $this->load->view('tampil/main',$data);
@@ -184,7 +184,7 @@ class Main extends CI_Controller {
 	    
 	    $this->Mymodel->update('facility',$data, $where);
 	    
-	   $data['fasilitas']=$this->Mymodel->select('facility');
+	   $data['fasilitas']=$this->Mymodel->selectfac2('facility');
 	   $data['content']='tampil/facility';
 	   $data['loggedin']= $this->session->userdata('FULL_NAME');
 	   $this->load->view('tampil/main',$data);

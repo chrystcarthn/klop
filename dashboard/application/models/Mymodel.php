@@ -220,5 +220,12 @@ class Mymodel extends CI_Model {
 	    $this->db->join('users','category.CREATED_BY = users.ID_USER');
 		return $this->db->get($table);
 	}
+	
+	public function selectfac2($table)
+	{
+	    $this->db->select('facility.ID_FACILITY_DB, category.NAME_FACILITY, category.CREATED, (select FULL_NAME from users where ID_USER = category.CREATED_BY) "NamaAC" , facility.UPDATED, (select FULL_NAME from users where ID_USER = category.UPDATED_BY) "NamaAU",  facility.PUBLISHED');
+	    $this->db->join('users','facility.CREATED_BY = users.ID_USER');
+		return $this->db->get($table);
+	}
 
 }
