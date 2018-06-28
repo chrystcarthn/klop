@@ -76,7 +76,7 @@ class Main extends CI_Controller {
 		   $this->load->view('tampil/main',$data);
 		} else {
 			echo "<script>alert('Tidak bisa mendeaktivasi diri sendiri');";
-			echo "windows.location.href = '" .base_url(). "';";
+			echo "windows.location.href = '" .base_url().'index.php/Main'"';";
     	    echo "</script>";
 		}
 	}
