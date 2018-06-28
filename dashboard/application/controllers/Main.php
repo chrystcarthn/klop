@@ -261,6 +261,13 @@ class Main extends CI_Controller {
 	   
 	}
 	
+	public function add_new_adm()
+	{
+	   $data['content']='tampil/add_admin';
+	   $data['loggedin']= $this->session->userdata('FULL_NAME');
+	   $this->load->view('tampil/main', $data);
+	}
+	
 	public function add_new_fac()
 	{
 	   $data['content']='tampil/add_facility';
@@ -273,6 +280,31 @@ class Main extends CI_Controller {
 	   $data['content']='tampil/add_category';
 	   $data['loggedin']= $this->session->userdata('FULL_NAME');
 	   $this->load->view('tampil/main', $data);
+	}
+	
+	public function add_admin(){
+	    $data['full_name']=$this->input->post('nameadmin');
+		$data['phone']=$this->input->post('phone');
+		$data['email']=$this->input->post('email');
+	    
+		$data['id_role']= "1";
+	    $data['created']= date('Y-m-d H:i:s');
+	    $data['created_by']= $this->session->userdata('ID_USER');
+		
+	   
+	    if($pubtemp = $this->input->post('status') == "Aktif")
+	    {
+	        $data['status']= "active";
+	    }else $data['status']= "nonactive";
+	    
+	  
+	    $this->Mymodel->insert('users',$data);
+	   
+	   
+	   $data['admin']=$this->Mymodel->selectadmin('users');
+	   $data['content']='tampil/admin';
+	   $data['loggedin']= $this->session->userdata('FULL_NAME');
+	   $this->load->view('tampil/main',$data);
 	}
 	
 	public function add_facility(){
