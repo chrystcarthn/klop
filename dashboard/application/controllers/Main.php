@@ -126,12 +126,16 @@ class Main extends CI_Controller {
 	    
 	    $this->Mymodel->update('users',$data, $where);
 		
-		$getuser = $this->db->get_where('users', array('EMAIL' => $this->input->post('email'), 'PASSWORD' => $this->input->post('pasword')));
-		$datauser = $getuser->row();
+		$where= array('EMAIL'=>$this->input->post('email'),
+    	                    'PASSWORD'=>$this->input->post('password'));
+		$data['user']=$this->Mymodel->selectwhere('users',$where);
+		
+		
+
 	    $sess = array(
-			'ID_USER' => $getuser->row()->ID_USER,
-			'FULL_NAME' => $getuser->row()->FULL_NAME,
-			'ID_ROLE' => $getuser->row()->ID_ROLE,
+			'ID_USER' => $data['user']->ID_USER,
+			'FULL_NAME' => $data['user']->FULL_NAME,
+			'ID_ROLE' => $data['user']->ID_ROLE,
 		);
     	$this->session->set_userdata($sess);
 		
