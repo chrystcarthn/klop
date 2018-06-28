@@ -119,7 +119,7 @@ class Main extends CI_Controller {
 	    $data['full_name']=$this->input->post('nameadmin');
 	    $data['phone']=$this->input->post('phone');
 	    $data['email']=$this->input->post('email');
-	    $data['password']=$this->input->post('pasword');
+	    $data['password']=$this->input->post('password');
 	    
 	    $data['updated']= date('Y-m-d H:i:s');
 	    $data['updated_by']= $this->session->userdata('ID_USER');
