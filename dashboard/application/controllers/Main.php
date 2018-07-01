@@ -430,7 +430,7 @@ class Main extends CI_Controller {
 	    $this->Mymodel->insert('facility',$data);
 	   
 	   
-	   $data['fasilitas']=$this->Mymodel->select('facility');
+	   $data['fasilitas']=$this->Mymodel->selectfac2('facility');
 	   $data['content']='tampil/facility';
 	   $data['loggedin']= $this->session->userdata('FULL_NAME');
 	   $this->load->view('tampil/main',$data);

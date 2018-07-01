@@ -148,7 +148,13 @@
                           ?>
                         
                     </td>
-                      <td><?php echo $i->NamaAU; ?></td>
+                      <td>
+					  <?php if($i->NamaAU == "0"){
+						echo "-"; 
+					}
+					else echo $i->NamaAU;
+						?>
+					  </td>
                     <td>
                         <a href="#" class="btn btn-primary btn-xs" onclick="updatefacility('<?php echo $i->ID_FACILITY_DB; ?>')">Ubah</a>
                         

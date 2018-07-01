@@ -147,7 +147,15 @@
                           ?>
                         
                     </td>
-                    <td><?php echo $i->NamaAU; ?></td>
+                    <td>
+					
+					<?php if($i->NamaAU == "0"){
+						echo "-"; 
+					}
+					else echo $i->NamaAU;
+						?>
+					
+					</td>
                     
 					 <td>
                         <a href="#" type="submit" method="post" class="btn btn-success btn-xs" id="id" onclick="active('<?php echo $i->ID_USER; ?>')">Aktifkan</a>

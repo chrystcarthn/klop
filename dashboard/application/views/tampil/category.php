@@ -147,7 +147,14 @@
                           ?>
                         
                     </td>
-                    <td><?php echo $i->NamaAU; ?></td>
+                    <td>
+						
+					<?php if($i->NamaAU == "0"){
+						echo "-"; 
+					}
+					else echo $i->NamaAU;
+						?>
+						</td>
                     <td>
                         <a href="#" class="btn btn-primary btn-xs" onclick="updatecategory('<?php echo $i->ID_CATEGORY_DB; ?>')">Ubah</a>
                        
