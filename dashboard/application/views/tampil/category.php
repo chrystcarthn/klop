@@ -149,7 +149,7 @@
                     </td>
                     <td>
 						
-					<?php if($i->NamaAU == "0"){
+					<?php if($i->NamaAU == "-"){
 						echo "-"; 
 					}
 					else echo $i->NamaAU;
