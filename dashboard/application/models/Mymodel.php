@@ -26,6 +26,7 @@ class Mymodel extends CI_Model {
 
     function getcountuser($table){
 	    $this->db->select('count(*) "jusers"');
+		$this->db->where('id_role', '2');
 		return $query= $this->db->get($table);
 	}
 	
