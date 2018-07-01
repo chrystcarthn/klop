@@ -224,7 +224,7 @@
               <!-- /.tab-pane -->
               <div class="tab-pane" id="klien">
                 <!-- The timeline -->
-                 <h4 class="page-header">Data pengguna yang telah bergabung menjadi Klien (pemilik outlet)</h4>
+                 <h4 class="page-header">Data pengguna yang telah bergabung menjadi Pemilik Outlet</h4>
  <!-- /.box-header -->
                 <div class="box-body">
                   <table id="example2" class="table table-bordered table-hover">
