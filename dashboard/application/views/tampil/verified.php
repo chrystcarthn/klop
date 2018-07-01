@@ -123,7 +123,7 @@
                         }else echo "Ditolak"; 
                     ?></td>
                     <td><?php
-                         if($i->STATUS_STORE == "verified" && $i->IS_DELETED == "false"){
+                         if(($i->STATUS_STORE == "verified" && $i->IS_DELETED == "false") || ($i->STATUS_STORE == "unverified" && $i->IS_DELETED == "false")){
                             echo '<strong><span style="color:#008C00;text-align:center;">Aktif</span></strong>';
                         }else  echo '<strong><span style="color:#C20A0A;text-align:center;">Nonaktif</span><strong>';
                     ?></td>
